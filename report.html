@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="gbk">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scan Report</title>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<div class="container container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<h3 class="text-center">
+				Scan Report
+			</h3>
+			</BR>
+			<table class="table table-bordered">
+				<thead>
+                    <tr><th>url</th><th>vul</th></tr>
+
+					
+				</thead>
+				<tbody>
+					<tr><th>http://192.168.220.144/ldap/example2.php?name=hacker&password=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/sqli/example4.php?id=2</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xml/example2.php?name=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/codeexec/example1.php?name=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/commandexec/example1.php?ip=127.0.0.1</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/codeexec/example3.php?new=hacker&pattern=/lamer/&base=Hello%20lamer</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/codeexec/example3.php?new=hacker&pattern=/lamer/&base=Hello%20lamer</th><th>xss</th></tr>
+<tr><th>http://192.168.220.144/codeexec/example2.php?order=id</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xss/example7.php?name=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/fileincl/example1.php?page=intro.php</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/fileincl/example1.php?page=intro.php</th><th>xss</th></tr>
+<tr><th>http://192.168.220.144/xss/example1.php?name=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xss/example1.php?name=hacker</th><th>xss</th></tr>
+<tr><th>http://192.168.220.144/ldap/example1.php?username=hacker&password=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/commandexec/example2.php?ip=127.0.0.1</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/sqli/example1.php?name=root</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/upload/example2.php?order=id</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/sqli/example8.php?order=name</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/sqli/example5.php?id=2</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xss/example5.php?name=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xss/example5.php?name=hacker</th><th>xss</th></tr>
+<tr><th>http://192.168.220.144/sqli/example7.php?id=2</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/commandexec/example3.php?ip=127.0.0.1</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/sqli/example2.php?name=root</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/sqli/example9.php?order=name</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/sqli/example3.php?name=root</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/codeexec/example4.php?name=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xss/example6.php?name=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xss/example6.php?name=hacker</th><th>xss</th></tr>
+<tr><th>http://192.168.220.144/xss/example4.php?name=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xss/example4.php?name=hacker</th><th>xss</th></tr>
+<tr><th>http://192.168.220.144/xml/example1.php?xml=<test>hacker</test></th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xml/example1.php?xml=<test>hacker</test></th><th>xss</th></tr>
+<tr><th>http://192.168.220.144/fileincl/example2.php?page=intro</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/fileincl/example2.php?page=intro</th><th>xss</th></tr>
+<tr><th>http://192.168.220.144/sqli/example6.php?id=2</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xss/example3.php?name=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xss/example3.php?name=hacker</th><th>xss</th></tr>
+<tr><th>http://192.168.220.144/xss/example2.php?name=hacker</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/xss/example2.php?name=hacker</th><th>xss</th></tr>
+<tr><th>http://192.168.220.144/upload/example2.php?order=age</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/upload/example2.php?order=name</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/sqli/example8.php?order=id</th><th>sql</th></tr>
+<tr><th>http://192.168.220.144/sqli/example8.php?order=age</th><th>sql</th></tr>
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>  </body>
+</html>
